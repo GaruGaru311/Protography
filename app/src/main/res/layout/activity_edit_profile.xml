@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Activities.EditProfileActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/colorPrimaryVariant"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/EditProfileImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:padding="5dp"
+            app:strokeWidth="3dp"
+            app:strokeColor="@color/yellow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            app:shapeAppearanceOverlay="@style/Circular"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/selectProfilePhoto"
+            android:clickable="true"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            app:contentPadding="5dp"
+            android:background="@color/yellow"
+            app:srcCompat="@drawable/ic_baseline_edit_24"
+            android:tint="?attr/colorPrimaryVariant"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="-50dp"
+            android:layout_marginLeft="-50dp"
+            android:layout_below="@+id/EditProfileImage"
+            android:layout_toRightOf="@+id/EditProfileImage"
+            app:shapeAppearanceOverlay="@style/Circular"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:layout_marginTop="-95dp"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="25dp"
+            android:layout_margin="25dp"
+            android:elevation="0dp"
+            app:cardBackgroundColor="?attr/colorSurface">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_profile2"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="25dp"
+                    android:textSize="25sp"
+                    android:layout_gravity="center_horizontal"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="clear_text"
+                    android:hint="@string/username"
+                    app:startIconDrawable="@drawable/ic_baseline_person_24"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginBottom="45dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EditNomeCompleto"
+                        android:inputType="textCapSentences"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/Save"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="-55dp"
+            android:text="@string/save"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+</LinearLayout>

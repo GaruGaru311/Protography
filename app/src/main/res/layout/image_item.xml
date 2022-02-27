@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginTop="15dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="?attr/cardBackgroundColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:contentDescription="Immagine"
+                android:scaleType="centerCrop"
+                android:transitionName="transition" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageProfile"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:scaleType="centerCrop"
+                android:padding="5dp"
+                app:shapeAppearanceOverlay="@style/Circular"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/description"
+                android:text="Titolo"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:text="Descrizione"
+                android:layout_alignBottom="@id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/savesImage"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginEnd="30dp"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_baseline_bookmark_24"
+                android:layout_alignTop="@id/imageView"
+                android:layout_alignParentEnd="true"
+                app:tint="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                android:id="@+id/savesNr"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@id/savesImage"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="7dp"
+                android:text="25"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

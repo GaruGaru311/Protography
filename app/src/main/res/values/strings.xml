@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name" translatable="false">Protography</string>
+    <string name="add">Add</string>
+    <string name="profile">Profile</string>
+    <string name="discover">Discover</string>
+    <string name="take_photo">Camera</string>
+    <string name="select_photo">Gallery</string>
+    <string name="choose_method">Select a photo or take one</string>
+    <string name="image_description">Profile image</string>
+    <string name="tab_upload">Uploads</string>
+    <string name="tab_bookmarks">Bookmarks</string>
+    <string name="saves_nr" translatable="false">Saves:</string>
+    <string name="nature">Nature</string>
+    <string name="urban">Urban</string>
+    <string name="portrait">Portrait</string>
+    <string name="equipment">Equipment*</string>
+    <string name="camera_settings">Camera settings</string>
+    <string name="best_time_to_go">Best time to go</string>
+    <string name="tips">Tips</string>
+    <string name="errorMaps">Impossible to show directions</string>
+    <string name="insert_image_details">Insert image details</string>
+    <string name="title">Title*</string>
+    <string name="description">Description*</string>
+    <string name="advanced_settings">Advanced settings</string>
+    <string name="iso" translatable="false">ISO</string>
+    <string name="shutter_speed">Shutter Speed</string>
+    <string name="aperture">Aperture</string>
+    <string name="select_the_category">Select the category</string>
+    <string name="login" translatable="false">LOGIN</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="do_not_have_an_account">Do not have an account?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="warning">Warning</string>
+    <string name="want_to_exit">Are you sure you want to exit?</string>
+    <string name="upload_successful">Upload successful</string>
+    <string name="no_file_selected">No file selected</string>
+    <string name="field_is_required">Field is required</string>
+    <string name="fill_all_fields">Fill all fields</string>
+    <string name="select_another">Select another</string>
+    <string name="you_must_select_image">You must select an image to proceed</string>
+    <string name="do_you_want_to_exit_and_lose_data">Do you want to exit? You\'ll lose your data!</string>
+    <string name="field_email_is_empty">Field email is empty</string>
+    <string name="email_not_valid_unregistered_user">Email not valid. Unregistered user.</string>
+    <string name="field_password_empty">Field password is empty</string>
+    <string name="password_at_least_six">Password should have at least 6 characters</string>
+    <string name="login_failed_check_data">Login failed, check the data entered.</string>
+    <string name="email_required">Email required.</string>
+    <string name="invalid_email_try_again">Invalid email. Try again.</string>
+    <string name="check_email">Check your email for password reset.</string>
+    <string name="errore_retrieving_data">Error retrieving password. Check the data.</string>
+    <string name="welcome">Welcome</string>
+    <string name="empty_name">Invalid name. The field can\'t be empty.</string>
+    <string name="long_name">Invalid name. The field can\'t be longer than 15 characters.</string>
+    <string name="password_empty">Invalid password. The field can\'t be empty</string>
+    <string name="empty_email">Invalid email. The field can\'t be empty</string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="success_registration">Successfully registered user</string>
+    <string name="user_already_existing">Registration failed, user already existing</string>
+    <string name="you_haven_t_upload_any_image_yet">You haven\'t upload any image yet</string>
+    <string name="add_an_image_to_favorites">Add an image to favorites</string>
+    <string name="liked">Added to favorites!</string>
+    <string name="disliked">Removed from favorites</string>
+    <string name="error_login">Something went wrong, login again</string>
+    <string name="image">Image</string>
+    <string name="choose_your_image">Choose your image</string>
+    <string name="position">Position</string>
+    <string name="set_your_coordinates">Set your coordinates</string>
+    <string name="details">Details</string>
+    <string name="add_some_details">Add some details</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="remember_me">Remember me!</string>
+    <string name="recover_password">Recover Password</string>
+    <string name="insert_email">Insert Email</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="register">REGISTER</string>
+    <string name="username" translatable="false">Username</string>
+    <string name="at_least_six">At least 6 characters</string>
+    <string name="you_must_select_an_image">You must select an image</string>
+    <string name="registration_failed">"Registration failed"</string>
+    <string name="select_image">Select Image</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_theme">Change Theme</string>
+    <string name="logout" translatable="false">Logout</string>
+    <string name="edit_profile2">EDIT PROFILE</string>
+    <string name="save">Save</string>
+    <string name="switched_to_light_theme">Switched to light theme</string>
+    <string name="switched_to_dark_theme">Switched to dark theme</string>
+    <string name="loading">Loading…</string>
+    <string name="repeatPsw">Reinsert password</string>
+    <string name="differentPsw">Passwords are different</string>
+    <string name="immagine">Image</string>
+    <string name="get_directions">Get Directions</string>
+    <string name="swipe_up_to_see_more">Swipe to see more</string>
+    <string name="sure_to_delete_image">Are you sure you want to delete the image?</string>
+    <string name="back">BACK</string>
+    <string name="next">NEXT</string>
+    <string name="end">END</string>
+    <string name="image_correctly_deleted">Image correctly deleted</string>
+    <string name="cant_save">Can\'t save your own photo</string>
+    <string name="move_the_map">Move the map</string>
+    <string name="search">Search</string>
+    <string name="map_search">Search (Cities)</string>
+    <string name="place_search">Search (Address)</string>
+    <string name="equipmentImageActivity">Equipment</string>
+    <string name="required_field">* = required field</string>
+</resources>

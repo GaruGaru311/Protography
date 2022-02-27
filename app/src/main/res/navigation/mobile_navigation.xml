@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_search">
+
+    <activity
+        android:id="@+id/navigation_add"
+        android:name="com.example.protography.ui.Activities.AddActivity"
+        android:label="@string/add"
+        tools:layout="@layout/activity_add" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.protography.ui.Fragments.Search.MapsFragment"
+        android:label="@string/search" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.protography.ui.Fragments.User.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_find"
+        android:name="com.example.protography.ui.Fragments.FindFragment"
+        android:label="@string/discover"
+        tools:layout="@layout/fragment_find" />
+</navigation>

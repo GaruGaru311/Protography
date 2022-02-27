@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:scaleType="centerCrop"
+        android:padding="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        app:shapeAppearanceOverlay="@style/Circular"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageProfile"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="24dp"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:text="@string/username"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/yellow"
+        android:layout_marginRight="24dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"
+        android:layout_below="@+id/imageProfile"/>
+
+    <TextView
+        android:id="@+id/userMail"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:layout_alignStart="@id/userName"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:text="@string/description"
+        android:layout_alignLeft="@id/userName" />
+
+</RelativeLayout>

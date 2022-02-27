@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/Fragment_Find"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="Filter"
+        app:titleTextColor="@color/white"
+        android:background="@color/blueS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blueS"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/chip_group_layout">
+        <com.google.android.material.chip.ChipGroup
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            app:chipSpacingHorizontal="50dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_1"
+                app:chipCornerRadius="5dp"
+                style="@style/CustomChips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:checked="false"
+                android:text="Nature"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_2"
+                app:chipCornerRadius="5dp"
+                style="@style/CustomChips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Urban"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_3"
+                app:chipCornerRadius="5dp"
+                style="@style/CustomChips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Portrait"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </RelativeLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_below="@+id/chip_group_layout"
+        android:id="@+id/swipe_find"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="50dp"
+            android:scrollbars="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView_find">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+</RelativeLayout>
